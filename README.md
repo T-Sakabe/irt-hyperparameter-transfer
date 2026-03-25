@@ -4,8 +4,6 @@ This repository provides the code and data for the paper:
 
 **"Hyperparameter Transfer Using Item Response Theory"**
 
-## Overview
-
 Hyperparameter optimization (HPO) is computationally expensive, especially when performed independently for each dataset.  
 This work proposes a transfer-based HPO method using **Item Response Theory (IRT)**, which separates:
 
