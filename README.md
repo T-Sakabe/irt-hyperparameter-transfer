@@ -36,6 +36,48 @@ By linking these latent spaces, the performance of all configurations on the tar
 
 ---
 
+## Data
+
+The provided datasets contain **binary prediction results**:
+
+* Rows: hyperparameter configurations
+* Columns: data samples
+* Values:
+
+  * `1` = correct prediction
+  * `0` = incorrect prediction
+
+These datasets are the same as those used in the experiments in the paper.
+
+---
+
+## Usage
+
+### 1. Set dataset paths
+
+Update the dataset paths in the script according to the transfer setting:
+
+```r
+path_source <- "data/cifar10_binary_results.csv"
+path_target   <- "data/fer2013_binary_results.csv"
+```
+
+### 2. Run
+
+#### One-to-one transfer
+
+```bash
+Rscript src/run_one_to_one.R
+```
+
+#### Two-to-one transfer
+
+```bash
+Rscript src/run_two_to_one.R
+```
+
+---
+
 ## Repository Structure
 
 ```bash
