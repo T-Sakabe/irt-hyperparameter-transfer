@@ -1,6 +1,6 @@
 # irt-hyperparameter-transfer
 
-This repository provides the implementation and data for the paper:
+This repository provides the code and data for the paper:
 
 **"Hyperparameter Transfer Using Item Response Theory"**
 
@@ -13,6 +13,7 @@ This work proposes a transfer-based HPO method using **Item Response Theory (IRT
 - the **characteristics of datasets**
 
 This enables efficient hyperparameter transfer with only a small number of evaluations on the target dataset.
+This repository provides code and data for offline transfer-based HPO experiments.
 
 <p align="center">
   <img src="./image/Method_Overview.png" alt="Overview of the proposed IRT-based hyperparameter transfer method" width="100%"><br>
