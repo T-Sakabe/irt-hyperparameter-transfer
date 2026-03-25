@@ -10,7 +10,7 @@ This repository provides the code and data for the paper **"Hyperparameter Trans
 
 ## Data
 
-The provided datasets contain **binary prediction results**:
+The provided data contain **binary prediction results**:
 
 * Rows: hyperparameter configurations
 * Columns: data samples
@@ -19,15 +19,15 @@ The provided datasets contain **binary prediction results**:
   * `1` = correct prediction
   * `0` = incorrect prediction
 
-These datasets are the same as those used in the experiments in the paper.
+These data are the same as those used in the experiments in the paper.
 
 ---
 
 ## Usage
 
-### 1. Set dataset paths
+### 1. Set data paths
 
-Update the dataset paths in the script according to the transfer setting:
+Update the data paths in the script according to the transfer setting:
 
 ```r
 path_source <- "data/cifar10_binary_results.csv"
