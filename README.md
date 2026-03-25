@@ -1,32 +1,10 @@
 # Hyperparameter Transfer Using Item Response Theory
 
-This repository provides the code and data for the paper **"Hyperparameter Transfer Using Item Response Theory"**. Hyperparameter optimization (HPO) is computationally expensive, especially when performed independently for each dataset. This work proposes a hyperparameter transfer method using **Item Response Theory (IRT)**, which separates:
-
-- the **latent ability of hyperparameter configurations**, and  
-- the **characteristics of datasets**
-
-This enables efficient hyperparameter transfer with only a small number of evaluations on the target dataset.  
-This repository provides code and data for offline transfer-based HPO experiments.
+This repository provides the code and data for the paper **"Hyperparameter Transfer Using Item Response Theory"**. Hyperparameter optimization (HPO) is computationally expensive when performed independently for each dataset. Existing transfer-based HPO methods rely on observed performance metrics and do not explicitly disentangle configuration capability from dataset characteristics. This work proposes an IRT-based hyperparameter transfer method that separates these factors and enables efficient transfer.
 
 <p align="center">
   <img src="./image/Method_Overview.png" alt="Overview of the proposed IRT-based hyperparameter transfer method" width="100%"><br>
 </p>
-
----
-
-## Key Idea
-
-In this framework:
-
-- Hyperparameter configurations are treated as **examinees**
-- Data samples are treated as **test items**
-
-Using IRT, we estimate:
-
-- **Ability parameters** of hyperparameter configurations (from source datasets)
-- **Item parameters** of target datasets (from limited evaluations)
-
-By linking these latent spaces, the performance of all configurations on the target dataset can be predicted **without exhaustive evaluation**.
 
 ---
 
